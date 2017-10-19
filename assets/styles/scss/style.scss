@@ -25,8 +25,8 @@ CSS file.
 //Select the grid you would like to use
 // @include foundation-grid;
 
-// @include foundation-flex-grid;
-// @include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-flex-classes;
 
 @include foundation-xy-grid-classes;
 
@@ -68,3 +68,6 @@ CSS file.
 
 // Import your custom styles
 @import "global";
+@import "cfstyles";
+@import "cfheader";
+@import "cfhome";

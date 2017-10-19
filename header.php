@@ -35,11 +35,21 @@
 	</head>
 			
 	<body <?php body_class(); ?>>
+		<div class="row align-right social">
+			<div class="column small-12 ">
+				Social media menu
+			</div>
+		</div>
+		<div class="header-slider logo-header column small-12">
+			<a href="<?php echo home_url(); ?>">
+			<img src="<?php the_field('counterflows_logo', 'option'); ?>" />
+		</a>
+		</div>
 
 		<div class="off-canvas-wrapper">
 			
-			<!-- Load off-canvas container. Feel free to remove if not using. -->			
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
+			<!-- Load off-canvas container. Feel free to remove if not using. 			
+			 <?php get_template_part( 'parts/content', 'offcanvas' ); ?> 
 			
 			<div class="off-canvas-content" data-off-canvas-content>
 				

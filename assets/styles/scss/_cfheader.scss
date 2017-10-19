@@ -1,0 +1,46 @@
+/***
+**
+**  Counterflows styles - header
+**
+***/
+
+.top-bar, .top-bar ul{
+	background: #ffffff;
+}
+
+.menu{
+	a{
+		background-color: #ffffff;
+	}
+}
+
+//social media menu
+.social{
+	background-color: $black;
+	color: $white;
+	max-width: 100%;
+
+
+}
+
+
+.header-slider{
+	height: 300px; 
+	padding: rem-calc(20);
+	text-align: center;
+	img{
+		height: 100%;
+	}
+	a{
+		display: flex;
+		height: 100%;
+		justify-content: center;
+	}
+}
+
+.main-menu{
+	border-top: solid 2px $black;
+	border-bottom: solid 2px $black;
+	color: $black;
+	margin-bottom: ;
+}

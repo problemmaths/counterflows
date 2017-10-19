@@ -1,0 +1,1 @@
+{"version":3,"sources":["?cf-header.scss"],"names":[],"mappings":"AAMA,SACC,eAAoB,CACpB,AAED,QAEE,qBAA0B,CAC1B,AAGF,eACC,YAAc,CACd","file":"?cf-header.css","sourcesContent":["/***\n**\n**  Counterflows styles - header\n**\n***/\n\n.top-bar{\n\tbackground: #ffffff;\n}\n\n.menu{\n\ta{\n\t\tbackground-color: #ffffff;\n\t}\n}\n\n.header-slider{\n\theight: 300px;\n}"]}

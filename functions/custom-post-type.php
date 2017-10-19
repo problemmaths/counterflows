@@ -41,8 +41,8 @@ function custom_post_artist() {
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => 'dashicons-album', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
-			'rewrite'	=> array( 'slug' => 'custom_type', 'with_front' => false ), /* you can specify its url slug */
-			'has_archive' => 'custom_type', /* you can rename the slug here */
+			'rewrite'	=> array( 'slug' => 'artist', 'with_front' => false ), /* you can specify its url slug */
+			'has_archive' => 'artists', /* you can rename the slug here */
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			/* the next one is important, it tells what's enabled in the post editor */
@@ -60,7 +60,7 @@ function custom_post_artist() {
 
 
 	// adding the function to the Wordpress init
-	// add_action( 'init', 'custom_post_artist');
+	 add_action( 'init', 'custom_post_artist');
 	//
 	//
 	// 	for more information on taxonomies, go here:
