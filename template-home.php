@@ -70,16 +70,31 @@
 						?>
 					
 						<div class="columns small-12 medium-4">
+						
 						<?php 
 
 						$image = get_field('artist_lead_image');
 
 						if( !empty($image) ): ?>
 
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							<div class="image-hover-wrapper">
+					  
+							  <a href="#"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+								    <span class="image-hover-wrapper-reveal">
+								      <p><?php the_title(); ?></p>
+								    </span>
+								  </a>
+							  </div>
 
 						<?php endif; ?>
+						
+						
+					
+						
+						
+						
 					</div>
+				
 					
 				<?php	} ?>
 				</section>
@@ -100,3 +115,4 @@
 	</div> <!-- end #content -->
 
 <?php get_footer(); ?>
+

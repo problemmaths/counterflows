@@ -19,28 +19,46 @@
 	background-color: $black;
 	color: $white;
 	max-width: 100%;
-
+	width: 100%;
+	#menu-social-links.menu{
+		a{
+			background-color: $black;
+			color: $white;
+			font-size: 12px; 
+		}
+	}
 
 }
 
 
-.header-slider{
-	height: 300px; 
+.header-slider{ 
 	padding: rem-calc(20);
 	text-align: center;
 	img{
-		height: 100%;
+		
+	}
+	p{
+		margin-bottom: 0;
 	}
 	a{
 		display: flex;
 		height: 100%;
 		justify-content: center;
+		margin-bottom: $margin-s;
 	}
 }
 
 .main-menu{
 	border-top: solid 2px $black;
 	border-bottom: solid 2px $black;
-	color: $black;
-	margin-bottom: ;
-}
+	
+	margin-bottom: $margin-l;
+		.menu-item{
+			a{
+				color: $black ;
+			}
+		}
+	}
+	
+
+

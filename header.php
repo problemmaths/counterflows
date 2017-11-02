@@ -20,7 +20,9 @@
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta class="foundation-mq">
-		
+		<!--typekit -->
+		<script src="https://use.typekit.net/qyp7eqp.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<!-- If Site Icon isn't set in customizer -->
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
@@ -37,13 +39,19 @@
 	<body <?php body_class(); ?>>
 		<div class="row align-right social">
 			<div class="column small-12 ">
-				Social media menu
+				<?php wp_nav_menu( array( 'theme_location' => 'social-links' ) ); ?>
 			</div>
 		</div>
-		<div class="header-slider logo-header column small-12">
+		<div class="header-slider logo-header row align-spaced align-middle" >
+			<div class="column small-2"><p>A Festival of Underground, Experimental and International Music</p></div>
+			<div class="column small-4">
 			<a href="<?php echo home_url(); ?>">
 			<img src="<?php the_field('counterflows_logo', 'option'); ?>" />
 		</a>
+	</div>
+	<div class="column small-2"><p>5th - 8th April 2018, Glasgow</p></div>
+		
+		
 		</div>
 
 		<div class="off-canvas-wrapper">
